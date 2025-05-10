@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTG Frontend Assignment</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+  <nav class="navbar">
+    <div class="logo">Deepika Sah</div>
+    <button class="hamburger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#hero" aria-label="Go to Home section">Home</a></li>
+      <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+      <li><a href="#skills" aria-label="Go to Skills section">Skills</a></li>
+      <li><a href="#education" aria-label="Go to Education section">Education</a></li>
+      <li><a href="#recommendations" aria-label="Go to Recommendations section">Recommendations</a></li>
+      <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+  <div class="hero-left">
+    <h1>
+      I'm Deepika<br>
+      <span class="highlight">Front-end</span> Developer
+    </h1>
+    <p class="hero-desc">
+      Turning ideas into intuitive, beautiful interfaces — I'm Deepika, a front-end developer open for opportunities.
+    </p>
+    <a href="#contact" class="btn hero-btn">HIRE ME <span class="arrow">→</span></a>
+  </div>
+  <div class="hero-right">
+    <img src="assets/hero-illustration.png" alt="Hero Illustration" class="hero-img">
+  </div>
+</section>
+
+
+
+  <!-- Projects -->
+  <section id="projects" class="projects-section">
+  <h2 class="section-title">Projects</h2>
+  <p class="projects-desc"><b>
+    From idea to execution, these projects reflect my growth, skills, and dedication to front-end development
+  </b></p>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="assets/project1.jpg" alt="Project 1" class="project-img">
+      <div class="project-info">
+        <h3>CAFETERIA MANAGEMENT PROJECT</h3>
+        <p>Developed a C++-based system for menu display, order
+ processing, bill generation, and estimated food preparation
+ time.</p>
+        <div class="project-tags">
+          <span>Typescript</span>
+          <span>HTML</span>
+          <span>Command Line</span>
+          <span>C++</span>
+          <span>DataBase</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="assets/project2.jpg" alt="Project 2" class="project-img">
+      <div class="project-info">
+        <h3>INTROVERSE iOS APPLICATION</h3>
+        <p>Developing an iPhone app to help introverts explore and learn new things through interactive learning modules. </p>
+        <div class="project-tags">
+          <span>Swift</span>
+          <span>Supabase</span>
+          <span>UI/UX</span>
+          <span>Design Thinking</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="assets/project3.jpg" alt="Project 3" class="project-img">
+      <div class="project-info">
+        <h3>FLEET MANAGEMENT SYSTEM </h3>
+        <p>Collaborated with a team to develop a Fleet Management
+ System application during an internship.</p>
+        <div class="project-tags">
+          <span>SwiftUI</span>
+          <span>Firebase</span>
+          <span>SMTP</span>
+          <span>UI/UX</span>
+          <span>Business Essential</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills & Modal -->
+  <section id="skills" class="skills-section">
+  <h2 class="section-title">Skills & Languages</h2>
+  <ul id="skill-list" class="skill-list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+  <button id="open-modal-btn" class="btn">Add Skill</button>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education-section">
+  <h2 class="section-title">Education</h2>
+  <div class="education-list">
+    <div class="education-item">
+      <h3>Secondary School</h3>
+      <p>R.P. Memorial Public School</p>
+      <p style="color:#31989b; font-style:italic; font-size:14px; margin-bottom:0;">2018 - 2019 &nbsp;&nbsp; <span style='float:right;'>New Delhi, India</span></p>
+    </div>
+    <div class="education-item">
+      <h3>Intermediate School</h3>
+      <p>G.S.K.V A-Block Janakpuri School</p>
+      <p style="color:#31989b; font-style:italic; font-size:14px; margin-bottom:0;">2020 - 2021 &nbsp;&nbsp; <span style='float:right;'>New Delhi, India</span></p>
+    </div>
+    <div class="education-item">
+      <h3>Bachelor Of Technology (CSE)</h3>
+      <p>Galgotias University</p>
+      <p style="color:#31989b; font-style:italic; font-size:14px; margin-bottom:0;">2022 - 2026 &nbsp;&nbsp; <span style='float:right;'>Greater Noida, U.P., India</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="skill-modal" class="modal-overlay">
+  <div class="modal">
+    <h3>Add a Skill</h3>
+    <input type="text" id="skill-input" placeholder="Enter a skill">
+    <div class="modal-buttons">
+      <button id="cancel-btn" class="btn cancel">Cancel</button>
+      <button id="add-btn" class="btn add">Add</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Recommendations -->
+ <section id="recommendations" class="recommendation-section">
+  <h2 class="section-title">Recommendations</h2>
+  <p class="recommendation-desc"><b>The greatest measure of success isn't in the work you do, but in the words of those who've worked with you — and their trust says it all.</b></p>
+  <div class="recommendation-carousel">
+    <div class="recommendation-slider" id="recommendation-slider">
+      <div class="recommendation-card">
+        <div class="stars">★★★★★</div>
+        <div class="rec-title">Great Quality!</div>
+        <div class="rec-text">Always delivers with precision, creativity, and a strong sense of responsibility. Truly dependable and detail-oriented.</div>
+        <div class="rec-user">
+          <img src="assets/user1.png" alt="Aarav Mehta" class="rec-avatar">
+          <div>
+            <div class="rec-name">Aarav Mehta</div>
+            <div class="rec-role">Graphic Designer</div>
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div class="stars">★★★★★</div>
+        <div class="rec-title">Amazing Work!</div>
+        <div class="rec-text">Consistently delivers outstanding results. Her dedication, professionalism, and passion for excellence make her stand out in any team</div>
+        <div class="rec-user">
+          <img src="assets/user2.jpg" alt="Priya Nair" class="rec-avatar">
+          <div>
+            <div class="rec-name">Priya Nair</div>
+            <div class="rec-role">Photographer</div>
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div class="stars">★★★★★</div>
+        <div class="rec-title">Great Quality!</div>
+        <div class="rec-text">Great work ethic and a sharp eye for detail. Brings innovative ideas, stays calm under pressure, and never misses a deadline</div>
+        <div class="rec-user">
+          <img src="assets/user3.jpg" alt="Sneha Iyer" class="rec-avatar">
+          <div>
+            <div class="rec-name">Sneha Iyer</div>
+            <div class="rec-role">Software Developer</div>
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div class="stars">★★★★★</div>
+        <div class="rec-title">Great Quality!</div>
+        <div class="rec-text">Professional, reliable, and always ahead of the curve. A clear communicator who brings energy and focus to every project.</div>
+        <div class="rec-user">
+          <img src="assets/user4.jpg" alt="User 4" class="rec-avatar">
+          <div>
+            <div class="rec-name">Rohan Sharma</div>
+            <div class="rec-role">UI/UX Designer</div>
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div class="stars">★★★★★</div>
+        <div class="rec-title">Outstanding Support!</div>
+        <div class="rec-text">Top-notch quality every single time. Works with sincerity, adapts quickly, and is always ready to go the extra mile.</div>
+        <div class="rec-user">
+          <img src="assets/user5.jpg" alt="Priya Sharma" class="rec-avatar">
+          <div>
+            <div class="rec-name">Vikram Patil</div>
+            <div class="rec-role">Project Manager</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button id="rec-prev-slide">‹</button>
+      <button id="rec-next-slide">›</button>
+    </div>
+    <div class="slider-dots" id="rec-slider-dots"></div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="contact-wrapper">
+      <div class="contact-form-block">
+        <h2 class="contact-title"><b>Leave Me Your Info</b></h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Full Name ( Required )" required>
+          <input type="email" placeholder="Your Email ( Required )" required>
+          <input type="text" placeholder="Subject">
+          <textarea placeholder="Your Message" rows="5"></textarea>
+          <button type="submit" class="btn contact-btn">SEND MESSAGE</button>
+        </form>
+      </div>
+      <div class="contact-info-block">
+        <h2 class="contact-title">Contact Information</h2>
+        <div class="info-card">
+          <div class="info-icon" style="background:#FFC107;">🏠</div>
+          <div>
+            <div><strong>Country:</strong> India</div>
+            <div><strong>City:</strong> New Delhi</div>
+            <div><strong>Street:</strong> Dwarka, West Delhi</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon" style="background:#FFC107;">✉️</div>
+          <div>
+            <div><strong>Email:</strong> sahdeepika@gmail.com</div>
+            <div><strong>Skype:</strong> @Yourusername</div>
+            <div><strong>Telegram:</strong> @Yourusername</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon" style="background:#FFC107;">📞</div>
+          <div>
+            <div><strong>Support Services:</strong> 15369</div>
+            <div><strong>Office:</strong> +58 (021)356 587 235</div>
+            <div><strong>Personal:</strong> +58 (021)356 587 235</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo-container">
+          <img src="assets/logo-glasses.jpg" alt="Logo" class="footer-logo">
+          <h3>Deepika Sah</h3>
+        </div>
+        <p class="footer-tagline">Turning ideas into beautiful digital experiences</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn Profile">
+            <img src="assets/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram Profile">
+            <img src="assets/instagram.png" alt="Instagram">
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook Profile">
+            <img src="assets/facebook.jpeg" alt="Facebook">
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub Profile">
+            <img src="assets/github.jpg" alt="GitHub">
+          </a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-cta">
+          <h3>Let's Work Together</h3>
+          <p>Have a project in mind? Let's discuss how we can create something amazing together.</p>
+          <a href="#contact" class="btn footer-btn">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Deepika Sah. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
